@@ -10,6 +10,8 @@
 ## github的用户交互形式
 
 <img src="./pictures/interaction.png" style="zoom:50%;" />
+<img width="621" alt="interaction" src="https://user-images.githubusercontent.com/96154418/161210302-ef2ae4c5-e546-4a99-93a7-5c0375c6853d.png">
+
 
 ## 影响力相关算法
 
