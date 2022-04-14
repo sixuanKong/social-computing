@@ -46,7 +46,7 @@ $$
 
 
 
-### HIST
+### HITS
 
 **思想**
 
@@ -86,7 +86,7 @@ $$
 
 ### BurstBiRank
 
-**pagerank和hist存在的问题**：只考虑了用户的follow网络，没有考虑用户和项目的行为
+**pagerank和hits存在的问题**：只考虑了用户的follow网络，没有考虑用户和项目的行为
 
 BurstBiRank思想：
 
