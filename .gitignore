@@ -1,0 +1,8 @@
+.DS_Store
+__pycache__
+**/__pycache__/
+.idea
+**/.ipynb_checkpoints/
+code/utils/connect.py
+code/data/
+code/result/
