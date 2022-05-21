@@ -3,14 +3,14 @@ import threading
 import connect
 
 
-def download(pt):
+def download(partition):
     o = connect.connect()
     sql = """
     SELECT actor_id, repo_id, type, created_at
     FROM ods_github_log
     WHERE  pt=%s
-    """ % pt
-    filename = '../data/log%s.csv' % pt
+    """ % partition
+    filename = '../data/log/log%s.csv' % partition
     with open(filename, 'w') as f:
         f.write('actor_id,repo_id,type,created_at\n')
         with o.execute_sql(sql).open_reader() as reader:
@@ -23,12 +23,12 @@ def download(pt):
 
 
 class DownloadThread(threading.Thread):
-    def __init__(self, pt):
+    def __init__(self, partition):
         super(DownloadThread, self).__init__()
-        self.pt = pt
+        self.partition = partition
 
     def run(self):
-        download(pt)
+        download(self.partition)
 
 
 if __name__ == '__main__':
