@@ -14,6 +14,10 @@
 ├── cheat_pagerank.py    模拟作弊pagerank
 ├── data    数据文件夹
 ├── dataset.ipynb    分析数据集
+│── docs
+│   ├── GitHub影响力分析期末汇报.pptx
+│   ├── 期末项目报告.docx
+│   └── 期末项目报告.pdf
 ├── hits.py    计算hits
 ├── pagerank.py    计算pagerank
 ├── pictures    保存的图片文件夹
@@ -31,5 +35,7 @@
     └── download_user.py
 ```
 
-因为结果和数据过大，保存在网盘中。
+因为结果和数据过大，保存在百度网盘中。
+链接：https://pan.baidu.com/s/1co6FR7HWJqy9QnqZ2U2-cA?pwd=f75J 
+提取码：f75J 
 
