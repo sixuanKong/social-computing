@@ -6,9 +6,10 @@ import connect
 def download(partition):
     o = connect.connect()
     sql = """
-    SELECT actor_id, repo_id, type, created_at
+    SELECT actor_id, repo_id, created_at
     FROM ods_github_log
     WHERE  pt=%s
+    AND type='PullRequestEvent'
     """ % partition
     filename = '../data/log/log%s.csv' % partition
     with open(filename, 'w') as f:
